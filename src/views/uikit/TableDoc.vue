@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { CustomerService } from '@/service/CustomerService';
 import { ProductService } from '@/service/ProductService';
 import { FilterMatchMode, FilterOperator } from '@primevue/core/api';
@@ -108,6 +108,7 @@ function initFilters1() {
 }
 
 function expandAll() {
+    // eslint-disable-next-line no-constant-binary-expression
     expandedRows.value = products.value.reduce((acc, p) => (acc[p.id] = true) && acc, {});
 }
 

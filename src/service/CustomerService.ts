@@ -9020,7 +9020,8 @@ export const CustomerService = {
         return Promise.resolve(this.getData());
     },
 
-    getCustomers(params) {
+    /* eslint-disable @typescript-eslint/no-explicit-any */
+    getCustomers(params: any) {
         const queryParams = params
             ? Object.keys(params)
                   .map((k) => encodeURIComponent(k) + '=' + encodeURIComponent(params[k]))

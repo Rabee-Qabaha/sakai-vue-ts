@@ -19,7 +19,8 @@ const layoutState = reactive({
 });
 
 export function useLayout() {
-    const setActiveMenuItem = (item) => {
+    /* eslint-disable @typescript-eslint/no-explicit-any */
+    const setActiveMenuItem = (item: any) => {
         layoutState.activeMenuItem = item.value || item;
     };
 
@@ -30,7 +31,7 @@ export function useLayout() {
             return;
         }
 
-        document.startViewTransition(() => executeDarkModeToggle(event));
+        document.startViewTransition(() => executeDarkModeToggle());
     };
 
     const executeDarkModeToggle = () => {

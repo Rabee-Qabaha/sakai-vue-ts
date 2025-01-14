@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { useLayout } from '@/layout/composables/layout';
 import { computed, ref, watch } from 'vue';
 import AppFooter from './AppFooter.vue';
