@@ -1,3 +1,7 @@
-Sakai is an application template for Vue based on the [create-vue](https://github.com/vuejs/create-vue), the recommended way to start a Vite-powered Vue projects.
+# sakai-vue-ts
+Sakai 4.2.0 TypeScript
 
-Visit the [documentation](https://sakai.primevue.org/documentation) to get started.
+
+## License
+
+This project is based on [PrimeTek's UI template](https://github.com/primefaces/primevue), which is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
